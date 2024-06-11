@@ -14,23 +14,26 @@ const ProductItems = ({ product }) => {
             quantity: product.quantity,
             color: product.color
         };
-        // console.log(product);
-        console.log("Line: ",line);
+        // console.log("product ", product);
+        console.log("Line: ", line);
 
     }
 
 
     return (
         <div className="p-2 border-2 bg-slate-200 border-gray-300 rounded-lg m-2">
+            {/* quantity  */}
             <p className="p-2 ">
                 {product?.product_name + " ( " + (product?.quantity === 0 ? "Out of Stock " : product?.quantity + " ) ")}
             </p>
+            {/* price */}
             <p className="text-left text-gray-400">
                 {product?.price.toLocaleString("en-US", {
                     style: "currency",
                     currency: "BDT"
                 })}
             </p>
+            {/* button */}
             <div className="text-semibold ">
                 <button
                     onClick={() => handleProductClickButton(product)}

@@ -1,5 +1,5 @@
 
-
+28.34 min
 Techonology:
 vite, redux
 
