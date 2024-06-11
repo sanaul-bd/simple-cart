@@ -1,5 +1,5 @@
 
-28.34 min
+52 min incomplete project  : need to know about async thaunk, builder etc from redux . 
 Techonology:
 vite, redux
 
